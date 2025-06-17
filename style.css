@@ -1,0 +1,110 @@
+.container { display: flex;
+             flex-direction: column; /* Mobile: stack vertically */}
+
+/* Desktop version */
+@media (min-width: 768px) {
+  .container {flex-direction: row; /* Desktop: side by side */}}
+
+body {background-color: hsl(233, 47%, 7%);
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      height: 100vh; /* Full viewport height */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+      overflow: hidden;}
+
+.container {background-color: hsl(244, 38%, 16%);
+            width: 950px;
+            border-radius: 5px;
+            height: 440px;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;}
+
+.container .left-container {width: 50%;
+                            padding-left: 80px;}
+
+.left-container .first-wording {margin-top: 70px;
+                                font-family: 'Inter', sans-serif;
+                                font-weight: 700;
+                                font-size: 40;}
+
+.first-wording .get {color: hsl(0, 0%, 100%);}
+
+.first-wording .insight {color: hsl(277, 64%, 61%);}
+
+.first-wording .that {color: hsl(0, 0%, 100%);}
+
+.left-container .second-wording {font-size: 13.5px;
+                                 margin-top: 30px;
+                                 color: hsla(0, 0%, 100%, 0.75);
+                                 line-height: 24px;
+                                 font-family: 'Inter', sans-serif;}
+
+.left-container .third-wording {display: flex;
+                                flex-direction: row;
+                                margin-top: 70px;}
+
+.first-third-wording .ten-k {color: hsl(0, 0%, 100%);
+                             font-size: 22px;
+                             font-family: 'Inter', sans-serif;
+                             font-weight: 700;}
+
+.first-third-wording .companies {color: hsla(0, 0%, 100%, 0.6);
+                                 font-size: 11px;
+                                 letter-spacing: 6x;
+                                 font-family: 'Lexend Deca', sans-serif;
+                                 font-weight: 400;}
+
+.third-wording .second-third-wording {margin-left: 55px;}
+
+.second-third-wording .three-one-four {color: hsl(0, 0%, 100%);
+                                       font-size: 22px;
+                                       font-family: 'Inter', sans-serif;
+                                       font-weight: 700;}
+
+.second-third-wording .templates {color: hsla(0, 0%, 100%, 0.6);
+                                  font-size: 11px;
+                                  letter-spacing: 6x;
+                                  font-family: 'Lexend Deca', sans-serif;
+                                  font-weight: 400;}
+
+.third-wording .third-third-wording {margin-left: 55px;}
+
+.third-third-wording .twelve-million {color: hsl(0, 0%, 100%);
+                                      font-size: 22px;
+                                      font-family: 'Inter', sans-serif;
+                                      font-weight: 700;}
+
+.third-third-wording .queries {color: hsla(0, 0%, 100%, 0.6);
+                               font-size: 11px;
+                               letter-spacing: 6x;
+                               font-family: 'Lexend Deca', sans-serif;
+                               font-weight: 400;}
+
+.container .right-container {background-image: url('image-header-desktop.jpg');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center;
+                            width: 50%;
+                            height: 100%;
+                            position: relative;}
+
+.right-container .overlay {position: absolute;
+                           top: 0;
+                           left: 0;
+                           width: 100%;
+                           height: 100%;
+                           background-color: hsl(277, 64%, 61%);
+                           mix-blend-mode: multiply; /* Without it, the picture doesn't show at all */
+                           pointer-events: none;
+                           border-top-right-radius: 5px;
+                           border-bottom-right-radius: 5px;}
+
+
+
+
+                                
+
