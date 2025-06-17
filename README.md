@@ -17,6 +17,7 @@ Users should be able to:
 
 
 ### Live site
+https://echo-script0.github.io/Stats-preview-card-component/
 
 
 ### Built with
